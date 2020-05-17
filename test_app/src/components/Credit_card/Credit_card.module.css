@@ -1,0 +1,135 @@
+.credit__card__data {
+    width: 60%;
+    border-radius: 10px;
+    border: 2px solid #f2f2f2;
+}
+.card__number {
+    width: 100%;
+    padding: 20px;
+}
+span {
+    color: orange;
+}
+.form-control {
+    border-radius: 0px;
+}
+.card__number input {
+    -moz-appearance: textfield;
+}
+.card__number input::-webkit-inner-spin-button {
+    display: none;
+}
+.card__valid {
+    width: 100%;
+    display: flex;
+}
+.card__valid__items {
+    width: 10%;
+}
+.card__valid__items__2 {
+    width: 10%;
+    margin-left: 10px;
+}
+.card__valid  p {
+    padding-left: 10px;
+}
+.card__valid__main {
+    padding: 20px;
+}
+.card__valid input {
+    -moz-appearance: textfield;
+}
+.card__valid input::-webkit-inner-spin-button {
+    display: none;
+}
+.card__city {
+    padding-top: 20px;
+}
+.check_box {
+    margin-top: 20px;
+    padding: 20px;
+    background-color: #fcfcfc;
+    border: 2px solid #dce3ea;
+    height: 70px;
+    border-radius: 10px;
+}
+.check_box a {
+    border-bottom: 1px dashed #000080;
+    text-decoration: none;
+}
+.credit__card {
+    display: flex;
+    margin-top: 20px;
+}
+.cvc {
+    width: 15%;
+    height: 300px;
+    padding: 20px;
+    position: relative;
+}
+
+.cvc input::-webkit-inner-spin-button {
+    display: none;
+}
+.credit__card label {
+    font-weight: bold;
+}
+.button {
+    margin-top: 20px;
+}
+.terms_condition {
+    color: #465f73;
+}
+.cvv_block {
+    display: flex;
+}
+.cvv_quest {
+    margin-top: 2px;
+    margin-left: -30%;
+ }
+.cvv_quest a {
+    text-decoration: none;
+
+}
+.cvv_button {
+    outline: 0 !important;
+    border: none;
+    background-color: transparent;
+}
+@media (max-width: 992px){
+    .cvc {
+        width: 25%;
+    }
+    .card__valid__items {
+        width: 15%;
+    }
+    .card__valid__items__2 {
+        width: 15%;
+    }
+}
+@media (max-width: 768px){
+    .cvc {
+        width: 30%;
+    }
+    .card__valid__items {
+        width: 20%;
+    }
+    .card__valid__items__2 {
+        width: 20%;
+    }
+}
+@media (max-width: 375px){
+    .cvc {
+        width: 35%;
+    }
+    .card__valid__items {
+        width: 40px;
+    }
+    .card__valid__items__2 {
+        width: 40px;
+    }
+    .cvv_quest {
+        margin-left: -40%;
+    }
+}
+

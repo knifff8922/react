@@ -1,0 +1,36 @@
+.container {
+    height: 100%;
+
+}
+
+.title {
+    text-align: center;
+    text-transform: uppercase;
+}
+
+.btn-primary {
+    width: 100%;
+    height: 50px;
+    background-color: #ff5319;
+    border: none;
+}
+
+.new_class {
+    width: 100%;
+}
+
+.new_class:active {
+
+}
+.nav-fill {
+    width: 100%;
+}
+.card_number_icon {
+ background-image: url("https://v1.iconsearch.ru/uploads/icons/siena/128x128/credit_cardgreen.png");
+    background-repeat: no-repeat;
+    background-size: 30px;
+    background-position: right
+}
+.bi-question-circle-fill {
+    font-size: 25px;
+}
