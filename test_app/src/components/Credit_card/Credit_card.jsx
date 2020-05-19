@@ -1,5 +1,6 @@
 import React from 'react';
 import s from './Credit_card.module.css';
+import MaskedInput from "react-text-mask";
 
 
 
@@ -14,17 +15,17 @@ const Credit_card = () => {
                 <div className={s.credit__card__data}>
                     <div className={s.card__number}>
                         <label htmlFor="validationDefault01">Card number<span>*</span> </label>
-                        <input type="number" className="form-control card_number_icon" id="validationDefault01" required/>
+                        <MaskedInput type="card" className="form-control card_number_icon" id="validationDefault01" mask={[/[0-9]/, /\d/, /\d/, /\d/, ' ', /\d/, /\d/, /\d/, /\d/, ' ', /\d/, /\d/, /\d/, /\d/, ' ', /\d/, /\d/, /\d/, /\d/]} required />
                     </div>
                     <div className={s.card__valid__main}>
                         <label htmlFor="validationDefault02">Vaild thru (mm/yy)<span>*</span></label>
                         <div className={s.card__valid}>
                             <div className={s.card__valid__items}>
-                                <input type="number" className="form-control" id="validationDefault02" required/>
+                                <MaskedInput mask={[/[0-1]/, /[0-9]/]}  type="card" className="form-control" id="validationDefault02"  required />
                             </div>
                             <p>/</p>
                             <div className={s.card__valid__items__2}>
-                                <input type="number" className="form-control" id="validationDefault03" required/>
+                                <MaskedInput mask={[/[0-9]/, /\d/]}  type="card" className="form-control" id="validationDefault03"  required />
                             </div>
                         </div>
                         <div className={s.card__city}>
@@ -36,7 +37,7 @@ const Credit_card = () => {
                 <div className={s.cvc}>
                     <label htmlFor="validationDefault01">CVV/CVC<span>*</span> </label>
                     <div className={s.cvv_block}>
-                        <input type="text" className="form-control cvv_icon" id="validationDefault05" required/>
+                        <MaskedInput mask={[/[0-9]/, /\d/, /\d/]}  type="text" className="form-control cvv_icon" id="validationDefault05" required />
                         <div className={s.cvv_quest}>
                             <button className={s.cvv_button} data-toggle="tooltip" data-placement="top" title="Enter the CVV / CVC code at the back of your payment card and proceed to payment.">
                             <svg className="bi bi-question-circle-fill" width="1em" height="1em" viewBox="0 0 16 16"
