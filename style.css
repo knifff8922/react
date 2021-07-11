@@ -1,0 +1,34 @@
+html,body {
+  height:100%;
+  margin:0;
+}
+
+.main_block {
+	background: url('Dzhubga.jpg') no-repeat center center fixed;
+	background-size: cover;
+	height: 100%;
+	width: 100%;
+	position: relative;
+}
+.main_title {
+	font-family: 'PT Sans', sans-serif;
+	width: 100%;
+	text-align: center;
+	margin-top: 100px;
+	position: absolute;
+}
+.second_block {
+	height: 1000px;
+	width: 100%;
+	position: relative;
+	background-color: grey;
+}
+.third_block {
+	height: 1000px;
+	width: 100%;
+	position: relative;
+	background-color: #D8BFD8;
+}
+.block_card {
+	width: 100%;
+}
