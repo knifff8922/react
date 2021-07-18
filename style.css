@@ -1,6 +1,18 @@
+@import url(https://fonts.googleapis.com/css?family=Arimo:400,400italic|Playfair+Display+SC:400,700&subset=latin,cyrillic);
+
 html,body {
   height:100%;
   margin:0;
+}
+
+
+h1 {
+  font-family: 'Playfair Display SC', serif;
+  font-weight: 500;
+  letter-spacing: 1px;
+  font-size: 30px;
+  color: #222222;
+  text-align: center;
 }
 
 .main_block {
@@ -11,23 +23,25 @@ html,body {
 	position: relative;
 }
 .main_title {
-	font-family: 'PT Sans', sans-serif;
+	/*font-family: 'PT Sans', sans-serif;*/
 	width: 100%;
 	text-align: center;
-	margin-top: 100px;
+	margin-top: 50px;
 	position: absolute;
 }
 .second_block {
-	height: 1000px;
+	height: 100%;
 	width: 100%;
 	position: relative;
-	background-color: grey;
+	background: url('2.jpg') no-repeat center center fixed;
+	background-size: cover;
 }
 .third_block {
-	height: 1000px;
+	height: 100%;
 	width: 100%;
 	position: relative;
-	background-color: #D8BFD8;
+	background: url('5.jpg') no-repeat center center fixed;
+	background-size: cover;
 }
 .block_card {
 	width: 100%;
