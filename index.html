@@ -9,6 +9,8 @@
 	<link rel="preconnect" href="https://fonts.googleapis.com">
 	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 	<link href="https://fonts.googleapis.com/css2?family=PT+Sans:ital@1&display=swap" rel="stylesheet">
+	<script src="https://api-maps.yandex.ru/2.1/?apikey=d1db0696-e384-4fa5-8bb4-bd1b4d537fe1&lang=ru_RU" type="text/javascript">
+    </script>
 	
 	
 	
@@ -91,21 +93,21 @@
 					  <div class="card-body">
 					    <h5 class="card-title">2х местный номер</h5>
 					    <p class="card-text">в сутки<br>с кондиционером - 750р.<br>без кондиционера - 650р.</p>
-					    <a href="#" class="btn btn-success">Забронировать по WhatsApp</a>
+					    <a href="https://wa.me/79176050008" class="btn btn-success">Забронировать по WhatsApp</a>
 					  </div>
 					</div>
 					<div class="card text-center" style="width: 18rem;">
 					  <div class="card-body">
 					    <h5 class="card-title">3х местный номер</h5>
 					    <p class="card-text">в сутки<br>с кондиционером - 1200р.<br>без кондиционера - 1000р.</p>
-					    <a href="#" class="btn btn-success">Забронировать по WhatsApp</a>
+					    <a href="https://wa.me/79176050008" class="btn btn-success">Забронировать по WhatsApp</a>
 					  </div>
 					</div>
 					<div class="card text-center" style="width: 18rem;">
 					  <div class="card-body">
 					    <h5 class="card-title">4х местный номер</h5>
 					    <p class="card-text">в сутки<br>эконом - 1300р. <br>  </p>
-					    <a href="#" class="btn btn-success">Забронировать по WhatsApp</a>
+					    <a href="https://wa.me/79176050008" class="btn btn-success">Забронировать по WhatsApp</a>
 					  </div>
 					</div>
 				</div>
@@ -230,6 +232,46 @@
 	<div class="fourth_block" id="contacts">
 		<div class="container-fluid main_title">
 			<h1>Контакты</h1>
+
+			<div class="container">
+				<div class="row">
+					<div class="card" style="margin: 50px auto;">
+					  <div class="card-body">
+					    Связаться с нами чтобы забронировать номер можно по номеру телефона <a href="tel:+79176050008">+7(917)-605-00-08</a>
+					  </div>
+					</div>
+
+
+	    			<div id="map" style="width: 100%; height: 400px; margin: 100px auto;"></div>
+
+	    			<script type="text/javascript">
+					    // Функция ymaps.ready() будет вызвана, когда
+					    // загрузятся все компоненты API, а также когда будет готово DOM-дерево.
+					    ymaps.ready(init);
+					    function init(){
+					        // Создание карты.
+					        var myMap = new ymaps.Map("map", {
+					            // Координаты центра карты.
+					            // Порядок по умолчанию: «широта, долгота».
+					            // Чтобы не определять координаты центра карты вручную,
+					            // воспользуйтесь инструментом Определение координат.
+					            center: [44.323036, 38.699225],
+					            // Уровень масштабирования. Допустимые значения:
+					            // от 0 (весь мир) до 19.
+					            zoom: 15
+					        });
+					        var myPlacemark = new ymaps.Placemark([44.323036, 38.699225], {
+								iconContent: 'Гостевой дом "Грейс"'
+							}, {
+								preset: 'islands#redStretchyIcon'
+							});
+							myMap.geoObjects.add(myPlacemark); 
+					    }
+					</script>
+				</div>
+			</div>
+
+
 		</div>
 	</div>
 

@@ -78,14 +78,14 @@ h1 {
 	background-size: cover;
 }
 .third_block {
-	height: 1500px;
+	height: 1000px;
 	width: 100%;
 	position: relative;
 	background: url('5.jpg') no-repeat center center fixed;
 	background-size: cover;
 }
 .fourth_block {
-	height: 100%;
+	height: 1000px;
 	width: 100%;
 	position: relative;
 	background: url('6.jpg') no-repeat center center fixed;
